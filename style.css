@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0px;
+    font-family:'Courier New', Courier, monospace;
+    overflow-x: hidden;
+
+}
+nav{
+    background-color: rgba(150, 55, 55, 0.945);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: sticky;
+    top: 10px;
+
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul li a{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    color: aqua;
+    text-decoration: none;
+}
+span{
+    color: rgb(233, 10, 58);
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+
+}
+#home::before{
+    content:'';
+    position: absolute;
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/2016/11/Girl-face-hd-photos.jpg);
+    height: 600px; 
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.7;
+}
+.main{
+    border: 1px solid black ;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    z-index: -1;
+    box-shadow: 3px 4px 3px 4px;
+}
+.heading{
+    color: crimson;
+    text-align: center;
+    margin: 10px;
+    font-weight: 900;
+    font-size: 50px;
+}
+.heading:hover{
+    color: rgb(202, 15, 108);
+    text-shadow: 3px 5px 6px rgb(170, 31, 31);
+}
+.pic{
+    display: flex;
+}
+p{
+    text-align: justify;
+    margin: 40px;
+}
+.pic img{
+    width: 300px;
+    height: auto;
+}
+h3{
+    color: brown;
+    text-align: center;
+    text-decoration: underline;
+}
+.gallery{
+    margin-left: 150px;
+    justify-content: space-between;
+}
+.gallery img{
+    width: 400px;
+    height: 200px;
+    margin: 20px;
+    
+} 
+.gallery img:hover{
+    border: 2px ridge black;
+    box-shadow: 4px 2px 3px 4px;
+    width: 320px;
+    height: 220px;
+    
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.box{
+    width: 300px;
+    height: 500px;
+    border: 2px ridge black;
+    margin: 10px;
+    background:linear-gradient(to top,brown 50%,white 50%);
+    background-size: 100% 200%;
+    transition: all 1s;
+}
+.box:hover{
+    background-position: left bottom;
+    border: none;
+    box-shadow: 3px 2px 3px 4px brown;
+
+}
+.box img{
+    width: 250px;
+}
+.box h1{
+    margin: 10px;
+    color: chocolate;
+}
+.box p{
+    margin: 10px;
+    text-align: justify;
+}
+.input{
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px;
+}
+form{
+    width: 400px;
+    margin-left: 500px;
+    margin-right: 100px;
+}
+@media  screen and (max-width: 400px) {
+    .nav{
+        flex-direction: column;
+        position: fixed;
+        justify-content: center;
+        margin: 0;
+        top: 0;
+
+    }
+    nav ul{
+        margin: 5px 30px;
+    }
+    nav ul li{
+        font-size: 10px;
+        text-align: justify;
+        justify-content: space-between;
+    }
+    nav ul li a{
+        padding: 5px;
+        margin: 10px;
+    }
+    #home{
+        height: 600px;
+    }
+    #home::before{
+        overflow-x: hidden;
+        width: 400px;
+        height: 600px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
+    .gallery{
+        margin: 35px;
+    }
+    .main{
+        padding: 20px;
+        left: 10px;
+        top: 20%;
+        
+    }
+    .heading{
+        font-size: 20px;
+    }
+    span{
+        font-size: 40px;
+    }
+    .btn{
+        padding: 10px 20px;
+    }
+    #about{
+        margin: 10px;
+        margin-bottom: 0px;
+    }
+    .pic{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        padding: 10px 40px;
+    }
+    .pic img{
+        width: 100%;
+        height: auto;
+    }
+    .intro{
+        margin-top: 20px;
+        text-align: justify;
+    }
+    #project{
+        padding: 5px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .box{
+        width: 300px;
+        height: 400px;
+        margin-left: 50px;
+    }
+    .box img{
+        width: 300px;
+    }
+    form{
+        margin: 10px 5px;
+    }
+    .input{
+        width: 90%;
+        margin: 10px 5px;
+
+    }
+
+
+    
+}
